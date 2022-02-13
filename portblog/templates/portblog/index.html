@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'portblog/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <title>Brayden Hill</title>
+</head>
+<body>
+    <div class="typebox">
+        <h1 class="line-1 anim-typewriter" style="font-size: 30px; --wwidth: 8em; --delay:2s; --runlen:1s; --steps:10; --cursor_death: 7">Welcome!</h1>
+    </div>
+
+    <div class="typebox">
+        <p class="line-1 anim-typewriter" style="--wwidth:24em; --delay:4s; --runlen:2s; --steps:20; --cursor_death: 12">My Name is Brayden Hill.</p>
+    </div>
+
+    <div class="typebox" style="margin-top: 20px">
+        <p class="line-1 anim-typewriter" style="margin-top: 20px;--wwidth:4em; --delay:6s; --runlen:1s; --steps:4; --cursor_death: 14">$ ls</p>
+    </div>
+
+    <div class="typebox lsbox" style="margin-top: 4px; display:inline-block;">
+    <p>
+        drwxr-xr-x 1 Brayden Hill 197121    0 Feb 11 14:33 <a href="">./                  </a> <br><br>
+        drwxr-xr-x 1 Brayden Hill 197121    0 Feb 11 03:59 <a href="">../                 </a> <br><br>
+        -rw-r--r-- 1 Brayden Hill 197121 6.7K Feb 11 03:59 <a href="{% url 'portblog:resume' %}">resume.html          </a> <br><br>
+        -rw-r--r-- 1 Brayden Hill 197121 1.2K Feb 11 03:59 <a href="">blog.html              </a> <br><br>
+        -rw-r--r-- 1 Brayden Hill 197121 1.2K Feb 11 03:59 <a href="">blog_archive.html      </a> <br><br>
+        -rw-r--r-- 1 Brayden Hill 197121 1.9K Feb 11 14:33 <a href="">projects.html      </a> <br><br>
+        -rw-r--r-- 1 Brayden Hill 197121 9.8K Feb 11 03:59 <a href="">about_me.html           </a> <br><br>
+    </p>        
+    </div>
+
+</body>
+</html>

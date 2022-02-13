@@ -1,0 +1,72 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.name{
+    color: white;
+    font-weight: lighter;
+}
+
+:root{
+    --cursor_death: infinite;
+    --entry-delay: 7500ms;
+}
+
+body{
+/* background-image: url('images/space.jpg'); */
+/* background-size: cover; */
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Press Start 2P', monospace;  
+  background-color: rgb(25,25,25);  
+}
+
+.line-1{
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+    font-family: 'Press Start 2P';
+    border-right: 4px solid rgba(255,255,255,.75);
+    font-size: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.typebox {
+    margin: 6px;
+}
+
+.bordered {
+    border: 1px solid;
+}
+
+.lsbox{
+    opacity: 0;
+    font-family:'Press Start 2P';
+    animation-name: jumpin;
+    animation-duration: 1ms;
+    animation-delay: var(--entry-delay);
+    animation-fill-mode: forwards;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter var(--runlen) steps(var(--steps)) var(--delay) 1 normal both,
+             blinkTextCursor 500ms steps(44) var(--cursor_death) normal both;
+}
+
+@keyframes jumpin{
+    from{opacity: transparent}
+    to{opacity: 1}
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: var(--wwidth);}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

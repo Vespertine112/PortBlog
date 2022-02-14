@@ -11,3 +11,6 @@ def index(request):
 
 def resume(request):
     return render(request, 'portblog/resume.html', context=None)
+
+def archive(request):
+    return render(request, 'portblog/blog_archive.html', context=None)

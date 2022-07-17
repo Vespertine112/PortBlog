@@ -22,10 +22,10 @@ class comment(models.Model):
     def __str__(self) -> str:
         return self.commenter
 
-class globalLoggingData(models.Model):
-    vists = models.IntegerField(default=0)
+# class globalLoggingData(models.Model):
+#     vists = models.IntegerField(default=0)
 
-class visitorLoggingData(models.Model):
-    ip_address = models.IPAddressField()
+# class visitorLoggingData(models.Model):
+#     ip_address = models.IPAddressField()
     
 
